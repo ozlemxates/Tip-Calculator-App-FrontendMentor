@@ -1,3 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    gap: 3rem;
+}
+
+header h1 {
+    letter-spacing: 0.5rem;
+}
+
+main {
+    background-color: var(--white);
+    display: flex;
+    width: 50rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.calculation {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+h1 {
+    color: var(--dark-grayish-cyan);
+}
+
+.calculation h1 {
+    font-size: 1rem;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    gap:0.4rem;
+    
+}
+
+button {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-size: 20px;
+    width: 6.4rem;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+button:hover {
+    background-color: var(--strong-cyan);
+}
+
+input:focus {
+    outline-color: var(--strong-cyan);
+  }
+
+#percent6 {
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 20px;
+    text-align: right;
+    color: var(--very-dark-cyan);
+    width: 6.4rem;
+    padding: 0.3rem;
+}
+
+.block {
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    width: 20.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-align: right;
+    font-size: 24px;
+}
+
+/* ******************result**************** */
+
+.result {
+    width: 50%;
+    background-color: var(--very-dark-cyan);
+    border-radius: 1rem;
+    font-size: 18px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.amount, .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.person {
+    color:var(--grayish-cyan);
+}
+
+.result span {
+    color: var(--strong-cyan);
+    font-size: 2.5rem;
+    margin-top: -0.8rem;
+}
+
+.result button {
+    background-color: rgb(4 102 107);
+    color: var(--very-dark-cyan);
+    margin-top: 3rem;
+    width: 17.2rem;
+    padding: 0.3rem;
+}
+
+.result button:hover {
+    background-color: var(--strong-cyan);
+}
+
 .attribution {
      font-size: 11px; 
      text-align: center;
