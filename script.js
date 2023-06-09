@@ -30,19 +30,21 @@ function calculateTip() {
   const input = document.getElementById('percent6');
   let lastClickedButton = null;
 
+  const handleClick = function() {
+    if (lastClickedButton !== null) {
+      lastClickedButton.classList.remove('clicked');
+    }
+    
+    this.classList.add('clicked');
+    lastClickedButton = this;
+    
+    input.value = this.innerText;
+    input.classList.add('inputClicked');
+  };
+
   for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
-      if (lastClickedButton !== null) {
-        lastClickedButton.classList.remove('clicked');
-      }
-      this.classList.add('clicked');
-      lastClickedButton = this;
-      input.value ="";
-      input.value = this.innerText;
-      input.classList.add('inputClicked');
-    });
+    buttons[i].addEventListener('click', handleClick);
   }
-
-
+  
   calculateTip()
   
