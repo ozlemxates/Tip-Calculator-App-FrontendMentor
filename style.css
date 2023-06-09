@@ -74,6 +74,10 @@ button:hover {
     background-color: var(--strong-cyan);
 }
 
+.clicked {
+    background-color: var(--strong-cyan);
+}
+
 input:focus {
     outline-color: var(--strong-cyan);
   }
@@ -87,6 +91,10 @@ input:focus {
     color: var(--very-dark-cyan);
     width: 6.4rem;
     padding: 0.3rem;
+}
+
+.inputClicked {
+    outline: var(--strong-cyan);
 }
 
 .block {

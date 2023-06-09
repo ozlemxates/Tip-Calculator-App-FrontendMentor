@@ -26,5 +26,23 @@ function calculateTip() {
     document.getElementById('tipPerPerson').innerHTML = tipPerPerson || '$0,00';
   }
 
+  const buttons = document.getElementsByClassName('button');
+  const input = document.getElementById('percent6');
+  let lastClickedButton = null;
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+      if (lastClickedButton !== null) {
+        lastClickedButton.classList.remove('clicked');
+      }
+      this.classList.add('clicked');
+      lastClickedButton = this;
+      input.value ="";
+      input.value = this.innerText;
+      input.classList.add('inputClicked');
+    });
+  }
+
+
   calculateTip()
   
