@@ -19,11 +19,10 @@ function calculateTip() {
   
     const numberOfPeople = parseInt(document.getElementById("numberOfPeople").value);
     const tip = bill * tipPercent;
-    const tipPerPerson = tip / numberOfPeople;
-  
-    
-    document.getElementById('tipAmount').innerHTML = tip || '$0,00';
-    document.getElementById('tipPerPerson').innerHTML = tipPerPerson || '$0,00';
+    const tipPerPerson = (tip+bill) / numberOfPeople;
+
+    document.getElementById('tipAmount').innerHTML = isNaN(tip) ? '$0.00' : '$' + tip.toFixed(2);
+    document.getElementById('tipPerPerson').innerHTML = isNaN(tipPerPerson) ? '$0.00' : '$' + tipPerPerson.toFixed(2);
   }
 
   const buttons = document.getElementsByClassName('button');
@@ -45,6 +44,18 @@ function calculateTip() {
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', handleClick);
   }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      calculateTip();
+    }
+  });
+
+ 
+
+  calculateTip();
+
   
-  calculateTip()
+  
+
   
