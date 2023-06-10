@@ -51,8 +51,6 @@ function calculateTip() {
     }
   });
 
- 
-
   calculateTip();
 
   
