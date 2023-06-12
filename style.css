@@ -60,7 +60,7 @@ h1 {
     
 }
 
-button {
+.button {
     background-color: var(--very-dark-cyan);
     color: var(--white);
     font-size: 20px;
