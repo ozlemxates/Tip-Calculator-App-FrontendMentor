@@ -53,6 +53,42 @@ h1 {
     font-size: 1rem;
 }
 
+.input-container {
+    display: flex;
+    background-color: var(--very-light-grayish-cyan);
+    align-items: center;
+    padding-left: 10px;
+    width: 20.5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease; 
+}
+
+
+.block {
+    background-color: transparent;
+    color: var(--very-dark-cyan);
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    outline: none;
+}
+
+.block::placeholder {
+    margin-right: 5px;
+}
+
+.input-container:hover, #percent6:hover {
+    border: 2px solid var(--strong-cyan);
+}
+
+img {
+    width: 13px;
+    height: 19px;
+}
+
+
 .blocks {
     display: flex;
     flex-direction: column;
@@ -74,39 +110,19 @@ button:hover {
     background-color: var(--strong-cyan);
 }
 
-.clicked {
-    background-color: var(--strong-cyan);
-}
-
-input:focus {
-    outline-color: var(--strong-cyan);
-  }
-
 #percent6 {
     background-color: var(--very-light-grayish-cyan);
-    border: none;
     border-radius: 0.2rem;
     font-size: 20px;
     text-align: right;
     color: var(--very-dark-cyan);
     width: 6.4rem;
     padding: 0.3rem;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease; 
+    outline: none;
 }
 
-.inputClicked {
-    outline: var(--strong-cyan);
-}
-
-.block {
-    background-color: var(--very-light-grayish-cyan);
-    color: var(--very-dark-cyan);
-    width: 20.5rem;
-    height: 2rem;
-    border: none;
-    border-radius: 0.2rem;
-    text-align: right;
-    font-size: 24px;
-}
 
 /* ******************result**************** */
 
