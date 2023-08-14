@@ -25,15 +25,22 @@ body {
     gap: 3rem;
 }
 
-header h1 {
-    letter-spacing: 0.5rem;
+main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main {
+header h1 {
+    letter-spacing: 0.5rem;
+    margin: auto auto;
+}
+
+.container {
     background-color: var(--white);
     display: flex;
-    width: 50rem;
-    height: 25rem;
+    max-width: 50rem;
+    max-height: 25rem;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -180,3 +187,34 @@ button:hover {
 .attribution a {
      color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 915px) {
+  body {
+    height: auto;
+  }
+
+  main {
+    padding: 3rem;
+  }  
+
+  .container {
+    flex-direction: column;
+    min-height: 45rem;
+    width: 25rem;
+  }
+
+  .calculation, .result {
+    width: auto;
+  }
+
+  .result {
+    height: 18rem;
+    margin-top: 2rem;
+  }
+
+  .result button {
+    margin-top: 0;
+    width: 15rem;
+  }
+}
+  

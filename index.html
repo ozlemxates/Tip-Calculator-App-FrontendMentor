@@ -11,55 +11,58 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  <header>
-    <h1>SPLI</h1>
-    <h1>TTER</h1>
-  </header>
   <main>
-    <div class="calculation">
-      <h1>Bill</h1>
-      <div class="input-container">
-        <img src="images/icon-dollar.svg" alt="">
-        <input class="block" id="bill" type="number" placeholder="0">
-      </div>
-      <h1>Select Tip %</h1>
-      <div class="blocks">
-        <div class="fistBlock">
-          <button class="button" id="percent1" type="button" onclick="getPercent(0.05)"> %5</button>
-          <button class="button" id="percent2" type="button" onclick="getPercent(0.1)" >%10</button>
-          <button class="button" id="percent3" type="button" onclick="getPercent(0.15)" >%15</button>
+    <header>
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </header>
+    <div class="container">
+      <div class="calculation">
+        <h1>Bill</h1>
+        <div class="input-container">
+          <img src="images/icon-dollar.svg" alt="">
+          <input class="block" id="bill" type="number" placeholder="0">
         </div>
-        <div class="secondBlock">
-          <button class="button" id="percent4" type="button" onclick="getPercent(0.25)" >%25</button>
-          <button class="button" id="percent5" type="button" onclick="getPercent(0.5)" >%50</button>
-          <input class="button" id="percent6" type="number" oninput="getPercent()" placeholder="Custom">
+        <h1>Select Tip %</h1>
+        <div class="blocks">
+          <div class="fistBlock">
+            <button class="button" id="percent1" type="button" onclick="getPercent(0.05)"> %5</button>
+            <button class="button" id="percent2" type="button" onclick="getPercent(0.1)" >%10</button>
+            <button class="button" id="percent3" type="button" onclick="getPercent(0.15)" >%15</button>
+          </div>
+          <div class="secondBlock">
+            <button class="button" id="percent4" type="button" onclick="getPercent(0.25)" >%25</button>
+            <button class="button" id="percent5" type="button" onclick="getPercent(0.5)" >%50</button>
+            <input class="button" id="percent6" type="number" oninput="getPercent()" placeholder="Custom">
+          </div>
+        </div>
+    
+        <h1>Number of People</h1>
+        <div class="input-container">
+          <img src="images/icon-person.svg" alt="">
+          <input class="block" id="numberOfPeople" type="number" placeholder=  "0">
         </div>
       </div>
   
-      <h1>Number of People</h1>
-      <div class="input-container">
-        <img src="images/icon-person.svg" alt="">
-        <input class="block" id="numberOfPeople" type="number" placeholder=  "0">
+      <div class="result">
+        <div class="amount">
+          <div class="left">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <span id="tipAmount">$0,00</span>
+        </div>
+        <div class="total">
+          <div class="left">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <span id="tipPerPerson">$0,00</span>
+        </div>
+        <button>Reset</button>
       </div>
     </div>
 
-    <div class="result">
-      <div class="amount">
-        <div class="left">
-          <p>Tip Amount</p>
-          <p class="person">/ person</p>
-        </div>
-        <span id="tipAmount">$0,00</span>
-      </div>
-      <div class="total">
-        <div class="left">
-          <p>Total</p>
-          <p class="person">/ person</p>
-        </div>
-        <span id="tipPerPerson">$0,00</span>
-      </div>
-      <button>Reset</button>
-    </div>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
