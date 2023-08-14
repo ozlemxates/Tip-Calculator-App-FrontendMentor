@@ -40,7 +40,7 @@ header h1 {
     background-color: var(--white);
     display: flex;
     max-width: 50rem;
-    max-height: 25rem;
+    min-height: 20rem;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -141,7 +141,8 @@ button:hover {
     padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
+    overflow: hidden;
 }
 .amount, .total {
     display: flex;
@@ -217,7 +218,7 @@ button:hover {
   }
 
   .result {
-    height: 18rem;
+    min-height: 18rem;
     margin-top: 2rem;
   }
 
