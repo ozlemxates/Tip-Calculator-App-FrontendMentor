@@ -188,6 +188,15 @@ button:hover {
      color: hsl(228, 45%, 44%);
 }
 
+/* .clickedButton {
+    background-color: var(--strong-cyan);
+    border: 2px solid red;
+}
+
+.clickedInput {
+    border: 2px solid var(--strong-cyan);
+} */
+
 @media (max-width: 915px) {
   body {
     height: auto;
