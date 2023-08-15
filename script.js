@@ -33,3 +33,17 @@ document.addEventListener('keydown', function(event) {
     calculateTip();
   }
 });
+
+document.addEventListener('click', function(event) {
+  if (event.target.id === 'reset') {
+    clearAll();
+  }
+});
+
+function clearAll() {
+  document.getElementById("bill").value = "";
+  document.getElementById("numberOfPeople").value = "";
+  document.getElementById("percent6").value = "";
+  document.getElementById('tipAmount').innerHTML = '$0.00';
+  document.getElementById('tipPerPerson').innerHTML = '$0.00';
+}
