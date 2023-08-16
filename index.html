@@ -36,8 +36,10 @@
             <input class="button" id="percent6" type="number" oninput="getPercent()" placeholder="Custom">
           </div>
         </div>
-    
-        <h1>Number of People</h1>
+        <div class="numofPeopleContainer">
+          <h1>Number of People</h1>
+          <!-- <p class="errorMessage">Can't be zero</p> -->
+        </div>
         <div class="input-container">
           <img src="images/icon-person.svg" alt="">
           <input class="block" id="numberOfPeople" type="number" placeholder=  "0">
@@ -58,8 +60,8 @@
             <p class="person">/ person</p>
           </div>
           <span id="tipPerPerson">$0,00</span>
-        </div>
-        <button id="reset">Reset</button>
+        </div>     
+        <button id="reset" onclick="clearAll()">Reset</button>
       </div>
     </div>
 

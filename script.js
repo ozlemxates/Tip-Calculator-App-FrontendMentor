@@ -9,12 +9,6 @@ function calculateTip() {
   let bill = parseFloat(document.getElementById("bill").value);
   let numberOfPeople = parseInt(document.getElementById("numberOfPeople").value);
   
-  if (isNaN(bill) || isNaN(numberOfPeople) || numberOfPeople <= 0) {
-    document.getElementById('tipAmount').innerHTML = '$0.00';
-    document.getElementById('tipPerPerson').innerHTML = '$0.00';
-    return;
-  }
-  
   const tip = bill * tipPercent;
   const tipPerPerson = tip / numberOfPeople;
   const total = (tip + bill) / numberOfPeople;
@@ -31,12 +25,6 @@ inputs.forEach(input => {
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
     calculateTip();
-  }
-});
-
-document.addEventListener('click', function(event) {
-  if (event.target.id === 'reset') {
-    clearAll();
   }
 });
 
