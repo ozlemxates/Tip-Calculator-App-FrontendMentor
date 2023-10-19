@@ -8,6 +8,28 @@ function getPercent(value, buttonElement) {
 function calculateTip() {
   let bill = parseFloat(document.getElementById("bill").value);
   let numberOfPeople = parseInt(document.getElementById("numberOfPeople").value);
+
+  if (bill <= 0) {
+    document.getElementById("billContainer").classList.add("errorState");
+  } else {
+    document.getElementById("billContainer").classList.remove("errorState");
+  }
+
+  if (numberOfPeople <= 0) {
+    document.getElementById("numContainer").classList.add("errorState");
+  } else {
+    document.getElementById("numContainer").classList.remove("errorState");
+  }
+
+  if (tipPercent <= 0) {
+    document.getElementById("percent6").classList.add("errorState");
+  } else {
+    document.getElementById("percent6").classList.remove("errorState");
+  }
+
+  if (document.querySelectorAll(".errorState").length > 0) {
+    return;
+  }
   
   const tip = bill * tipPercent;
   const tipPerPerson = tip / numberOfPeople;

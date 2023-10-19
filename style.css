@@ -100,7 +100,6 @@ img {
     display: flex;
     flex-direction: column;
     gap:0.4rem;
-    
 }
 
 .button {
@@ -131,7 +130,7 @@ button:hover {
     width: 6.4rem;
     padding: 0.3rem;
     border: 2px solid transparent;
-    transition: border-color 0.3s ease; 
+    transition: 0.3s ease; 
     outline: none;
 }
 
@@ -148,8 +147,13 @@ button:hover {
 
 .errorState {
     border: 2px solid rgb(220, 121, 34);
+    animation: shake 0.3s ease 1;
+    border-color: 1px solid rgb(220, 121, 34);
 }
 
+.errorState:hover {
+    border: 2px solid rgb(220, 121, 34);
+}
 
 /* ******************result**************** */
 
@@ -248,4 +252,11 @@ button:hover {
     width: 15rem;
   }
 }
-  
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
