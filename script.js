@@ -26,17 +26,18 @@ function calculateTip() {
   } else {
     document.getElementById("percent6").classList.remove("errorState");
   }
-
-  if (document.querySelectorAll(".errorState").length > 0) {
-    return;
-  }
   
   const tip = bill * tipPercent;
   const tipPerPerson = tip / numberOfPeople;
   const total = (tip + bill) / numberOfPeople;
 
-  document.getElementById('tipAmount').innerHTML = '$' + tipPerPerson.toFixed(2);
-  document.getElementById('tipPerPerson').innerHTML = '$' + total.toFixed(2);
+  if (document.querySelectorAll(".errorState").length > 0) {
+    document.getElementById("tipAmount").innerHTML = '$0.00';
+    document.getElementById("tipPerPerson").innerHTML = '$0.00';
+  } else {
+    document.getElementById("tipAmount").innerHTML = '$' + tipPerPerson.toFixed(2);
+    document.getElementById("tipPerPerson").innerHTML = '$' + total.toFixed(2);
+  }
 }
 
 const inputs = document.querySelectorAll('input');
