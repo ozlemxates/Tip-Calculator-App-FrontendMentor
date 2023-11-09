@@ -136,7 +136,7 @@ button:hover {
     outline: none;
 }
 
-.numofPeopleContainer {
+.flexContainer {
     display: flex;
     justify-content: space-between;
     width: 20.5rem;
@@ -144,6 +144,10 @@ button:hover {
 }
 
 .errorMessage {
+    color: rgb(220, 121, 34);
+}
+
+.errorMessageBill {
     color: rgb(220, 121, 34);
 }
 
@@ -215,15 +219,6 @@ button:hover {
 .attribution a {
      color: hsl(228, 45%, 44%);
 }
-
-/* .clickedButton {
-    background-color: var(--strong-cyan);
-    border: 2px solid red;
-}
-
-.clickedInput {
-    border: 2px solid var(--strong-cyan);
-} */
 
 @media (max-width: 915px) {
   body {

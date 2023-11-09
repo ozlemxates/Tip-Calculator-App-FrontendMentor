@@ -7,7 +7,7 @@ function getPercent(value, buttonElement) {
   buttons.forEach(button => {
     button.classList.remove("clicked");
   });
-  
+
   if (buttonElement) {
     buttonElement.classList.add("clicked");
   } 
@@ -21,15 +21,24 @@ function calculateTip() {
 
   if (bill <= 0) {
     document.getElementById("billContainer").classList.add("errorState");
+    const errorMessageBill = document.querySelector(".errorMessageBill");
+    errorMessageBill.style.display = "block";
   } else {
     document.getElementById("billContainer").classList.remove("errorState");
+    const errorMessageBill = document.querySelector(".errorMessageBill");
+    errorMessageBill.style.display = "none";
   }
-
+  
   if (numberOfPeople <= 0) {
     document.getElementById("numContainer").classList.add("errorState");
+    const errorMessage = document.querySelector(".errorMessage");
+    errorMessage.style.display = "block";
   } else {
     document.getElementById("numContainer").classList.remove("errorState");
+    const errorMessage = document.querySelector(".errorMessage");
+    errorMessage.style.display = "none";
   }
+  
 
   if (tipPercent <= 0) {
     document.getElementById("percent6").classList.add("errorState");
