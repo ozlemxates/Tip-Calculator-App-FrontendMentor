@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app solution
 
-Thanks for checking out this front-end coding challenge. This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
+Thanks for checking out this front-end coding solution. This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
 ## Table of contents
   - [The challenge](#the-challenge)
