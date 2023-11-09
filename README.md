@@ -35,8 +35,8 @@ Users should be able to:
 
 ## Author
 
-GitHub Profile => [Here](https://github.com/ozlemxates)
-Frontend Mentor Profile => [Here](https://www.frontendmentor.io/profile/ozlemxates)
+- GitHub Profile => [Here](https://github.com/ozlemxates)
+- Frontend Mentor Profile => [Here](https://www.frontendmentor.io/profile/ozlemxates)
 
 ## Last but not least 
 
