@@ -1,9 +1,17 @@
 let tipPercent = 0.00;
-let bill = 0.00;
-let numberOfPeople = 0.00;
 
 function getPercent(value, buttonElement) {
   tipPercent = value ? value : parseInt(document.getElementById("percent6").value) / 100;
+
+  const buttons = document.querySelectorAll(".button");
+  buttons.forEach(button => {
+    button.classList.remove("clicked");
+  });
+  
+  if (buttonElement) {
+    buttonElement.classList.add("clicked");
+  } 
+
   calculateTip();
 }
 

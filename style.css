@@ -115,10 +115,12 @@ img {
 
 button:hover {
     background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
 }
 
 .clicked {
     background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
 }
 
 #percent6 {

@@ -26,13 +26,13 @@
         <h1>Select Tip %</h1>
         <div class="blocks">
           <div class="fistBlock">
-            <button class="button" id="percent1" type="button" onclick="getPercent(0.05)"> %5</button>
-            <button class="button" id="percent2" type="button" onclick="getPercent(0.1)" >%10</button>
-            <button class="button" id="percent3" type="button" onclick="getPercent(0.15)" >%15</button>
+            <button class="button" id="percent1" type="button" onclick="getPercent(0.05, this)"> %5</button>
+            <button class="button" id="percent2" type="button" onclick="getPercent(0.1, this)" >%10</button>
+            <button class="button" id="percent3" type="button" onclick="getPercent(0.15, this)" >%15</button>
           </div>
           <div class="secondBlock">
-            <button class="button" id="percent4" type="button" onclick="getPercent(0.25)" >%25</button>
-            <button class="button" id="percent5" type="button" onclick="getPercent(0.5)" >%50</button>
+            <button class="button" id="percent4" type="button" onclick="getPercent(0.25, this)" >%25</button>
+            <button class="button" id="percent5" type="button" onclick="getPercent(0.5,this)" >%50</button>
             <input class="button" id="percent6" type="number" oninput="getPercent()" placeholder="Custom">
           </div>
         </div>
